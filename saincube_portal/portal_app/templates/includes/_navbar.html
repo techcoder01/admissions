@@ -1,0 +1,24 @@
+{% load static %}
+<div class="bg-black">
+    <div class="container">
+        <div class="py-4 flex items-center justify-between">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'assets/img/logo.svg' %}" alt="" class="w-25 h-12 ">
+            </a>
+            <div
+                class="border border-white border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden">
+                <img src="{% static 'assets/img/menu.svg' %}" alt="">
+            </div>
+            <nav class="hidden gap-6 items-center sm:flex">
+                <a href="{% url 'home' %}"
+                    class="text-opacity-60 text-white hover:text-green-300 hover:text-opacity-100 transition">Home</a>
+                    <a href="{% url 'apply' %}" 
+                    class="text-opacity-60 text-white hover:text-green-300 hover:text-opacity-100 transition">Apply</a>
+                <a href="#"
+                    class="text-opacity-60 text-white hover:text-green-300 hover:text-opacity-100 transition">Jobs</a>
+                <a href="#"
+                    class="text-opacity-60 text-white hover:text-green-300 hover:text-opacity-100 transition">Courses</a>
+            </nav>
+        </div>
+    </div>
+</div>
